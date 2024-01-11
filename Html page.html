@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>COMPANY NAME</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<script>
+var check = function() {
+  if (document.getElementById('password').value ==
+    document.getElementById('repeat password').value) {
+    document.getElementById('message').style.color = 'green';
+    document.getElementById('message').innerHTML = 'matching';
+  } else {
+    document.getElementById('message').style.color = 'red';
+    document.getElementById('message').innerHTML = 'not matching';
+  }
+}
+</script>
+<body>
+<img src="companie.png" alt="Company"> <br>
+<H1>COMPANY NAME</h1><br>
+<a href="url">Home</a>
+<a href="url">Register</a>
+<a href="url">Contact</a>
+<h2>Registration form</h2>
+<form>
+<label>Name<label>
+<input type="text" name="name" size="40" required/> <br> <br>
+<label>Username<label>
+<input type="text" name="username"  size="25" required/> <br> <br>
+<label>Password<label>
+<input type="password" name="password" id="password" size="25" required/> <br> <br>
+<label>Repeat Password<label>
+<input type="password" name="repeat password" id="repeat_password" size="25" required/> <br> <br>
+<label>Email<label>
+<input type="email" name="email" size="20" required/> <br> <br>
+<label>Gender</label>
+<input type="radio" name="gender"/> Male  
+<input type="radio" name="gender"/> Female <br><br>
+<label>Telephone<label>
+<input type="text" name="phone" size="20" required/> <br> <br>
+<label>Country<label>
+<select>
+<option value="Romania">Romania</option>  
+<option value="France">France</option>  
+<option value="USA">USA</option>  
+<option value="England">England</option>  
+<option value="Germany">Germany</option>  
+<option value="Italy">Italy</option>  
+<option value="Austria">Austria</option>
+</select> <br> <br>
+<label>Subscribe to maillist</label>
+<input type="checkbox" name="subscribe"/> <br> <br>
+<input type="submit" value="Submit"/>
+<input type="reset" value="Reset"/>
+</form>
+
+</body>
+</html>
